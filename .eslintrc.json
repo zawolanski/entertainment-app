@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "simple-import-sort"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
+}
