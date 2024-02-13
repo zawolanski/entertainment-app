@@ -1,0 +1,24 @@
+@import './styles/mixins';
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  
+  @include media(tablet) {
+    padding: 1.5rem;
+  }
+  
+  @include media(desktop) {
+    padding: 2rem;
+    flex-direction: row;
+    min-height: 100vh;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+}

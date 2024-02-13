@@ -1,0 +1,49 @@
+@import 'styles/variables.scss';
+
+:root {
+  /* colors */
+  --danger: #{$danger};
+  --light: #{$light};
+  --dark-blue: #{$dark-blue};
+  --semi-dark-blue: #{$semi-dark-blue};
+  --greyish-blue: #{$greyish-blue};
+
+  /* typography */
+  --text-2xl: #{$text-2xl};
+  --text-xl: #{$text-xl};
+  --text-md: #{$text-md};
+  --text-sm: #{$text-sm};
+  --text-xs: #{$text-xs};
+
+  --font-light: #{$font-light};
+  --font-medium: #{$font-medium};
+
+  /* border radius */
+  --radius-lg: #{$radius-lg};
+  --radius-md: #{$radius-md};
+  --radius-sm: #{$radius-sm};
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: var(--text-sm);
+  font-weight: var(--font-light);
+  color: var(--light);
+  background-color: var(--dark-blue);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
