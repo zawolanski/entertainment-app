@@ -55,7 +55,7 @@
 
   &:hover > li > svg path {
     transition: fill var(--default-transition-time);
-    fill: var(--light);
+    fill: var(--danger);
   }
 }
 
