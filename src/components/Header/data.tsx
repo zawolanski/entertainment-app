@@ -3,6 +3,8 @@ import Movies from '@/icons/Movies';
 import Saved from '@/icons/Saved';
 import Series from '@/icons/Series';
 
+import styles from './header.module.scss';
+
 export const route = {
   home: '/',
   movies: '/movies',
@@ -13,22 +15,22 @@ export const route = {
 export const links = [
   {
     href: route.home,
-    icon: <Home />,
+    icon: <Home className={styles.navListIcon} />,
     label: 'Home',
   },
   {
     href: route.movies,
-    icon: <Movies />,
+    icon: <Movies className={styles.navListIcon} />,
     label: 'Movies',
   },
   {
     href: route.series,
-    icon: <Series />,
+    icon: <Series className={styles.navListIcon} />,
     label: 'TV Series',
   },
   {
     href: route.saved,
-    icon: <Saved />,
+    icon: <Saved className={styles.navListIcon} />,
     label: 'Bookmarked',
   },
 ];

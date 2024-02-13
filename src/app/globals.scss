@@ -22,6 +22,9 @@
   --radius-lg: #{$radius-lg};
   --radius-md: #{$radius-md};
   --radius-sm: #{$radius-sm};
+
+  /* transition */
+  --default-transition-time: #{$default-transition-time};
 }
 
 * {
