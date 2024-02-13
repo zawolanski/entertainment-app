@@ -1,0 +1,10 @@
+@import '../../app/styles/mixins';
+
+.heading {
+  font-size: var(--text-xl);
+  font-weight: var(--font-light);
+
+  @include media(tablet) {
+    font-size: var(--text-2xl);
+  }
+}
