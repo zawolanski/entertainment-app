@@ -2,6 +2,7 @@ import clsx from 'clsx/lite';
 
 import Movies from '@/icons/Movies';
 import Oval from '@/icons/Oval';
+import TVSeries from '@/icons/TVSeries';
 
 import { Video } from '../../data/types';
 import styles from './cardInformations.module.scss';
@@ -22,8 +23,17 @@ const CardInformations = ({
       <div className={styles.informationGeneral}>
         <span>{year}</span>
         <Oval className={styles.informationOval} />
-        <Movies className={styles.informationIcon} />
-        <span>{category}</span>
+        {category === 'movie' ? (
+          <>
+            <Movies className={styles.informationIcon} />
+            <span>Movie</span>
+          </>
+        ) : (
+          <>
+            <TVSeries className={styles.informationIcon} />
+            <span>TV Series</span>
+          </>
+        )}
         <Oval className={styles.informationOval} />
         <span>{rating}</span>
       </div>
