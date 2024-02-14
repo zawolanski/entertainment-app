@@ -3,10 +3,10 @@ import clsx from 'clsx/lite';
 import Movies from '@/icons/Movies';
 import Oval from '@/icons/Oval';
 
-import { Movie } from '../../data/types';
+import { Video } from '../../data/types';
 import styles from './cardInformations.module.scss';
 
-type Props = Pick<Movie, 'category' | 'rating' | 'title' | 'year'> & {
+type Props = Pick<Video, 'category' | 'rating' | 'title' | 'year'> & {
   isAbsolute?: boolean;
 };
 

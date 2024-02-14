@@ -3,7 +3,7 @@
     "title": "Beyond Earth",
     "image": "/images/beyond-earth/regular/large.jpg",
     "year": 2019,
-    "category": "Movie",
+    "category": "movie",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": true
@@ -12,7 +12,7 @@
     "title": "Bottom Gear",
     "image": "/images/bottom-gear/regular/large.jpg",
     "year": 2021,
-    "category": "Movie",
+    "category": "movie",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": true
@@ -21,7 +21,7 @@
     "title": "Undiscovered Cities",
     "image": "/images/undiscovered-cities/regular/large.jpg",
     "year": 2019,
-    "category": "TV Series",
+    "category": "series",
     "rating": "E",
     "isBookmarked": false,
     "isTrending": true
@@ -30,7 +30,7 @@
     "title": "1998",
     "image": "/images/1998/regular/large.jpg",
     "year": 2021,
-    "category": "Movie",
+    "category": "movie",
     "rating": "18+",
     "isBookmarked": false,
     "isTrending": true
@@ -39,7 +39,7 @@
     "title": "Dark Side of the Moon",
     "image": "/images/dark-side-of-the-moon/regular/large.jpg",
     "year": 2018,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": true,
     "isTrending": true
@@ -48,7 +48,7 @@
     "title": "The Great Lands",
     "image": "/images/the-great-lands/regular/large.jpg",
     "year": 2019,
-    "category": "Movie",
+    "category": "movie",
     "rating": "E",
     "isBookmarked": false,
     "isTrending": false
@@ -57,7 +57,7 @@
     "title": "The Diary",
     "image": "/images/the-diary/regular/large.jpg",
     "year": 2019,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -66,7 +66,7 @@
     "title": "Earth’s Untouched",
     "image": "/images/earths-untouched/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "18+",
     "isBookmarked": true,
     "isTrending": false
@@ -75,7 +75,7 @@
     "title": "No Land Beyond",
     "image": "/images/no-land-beyond/regular/large.jpg",
     "year": 2019,
-    "category": "Movie",
+    "category": "movie",
     "rating": "E",
     "isBookmarked": false,
     "isTrending": false
@@ -84,7 +84,7 @@
     "title": "During the Hunt",
     "image": "/images/during-the-hunt/regular/large.jpg",
     "year": 2016,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -93,7 +93,7 @@
     "title": "Autosport the Series",
     "image": "/images/autosport-the-series/regular/large.jpg",
     "year": 2016,
-    "category": "TV Series",
+    "category": "series",
     "rating": "18+",
     "isBookmarked": false,
     "isTrending": false
@@ -102,7 +102,7 @@
     "title": "Same Answer II",
     "image": "/images/same-answer-2/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "E",
     "isBookmarked": false,
     "isTrending": false
@@ -111,7 +111,7 @@
     "title": "Below Echo",
     "image": "/images/below-echo/regular/large.jpg",
     "year": 2016,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -120,7 +120,7 @@
     "title": "The Rockies",
     "image": "/images/the-rockies/regular/large.jpg",
     "year": 2015,
-    "category": "TV Series",
+    "category": "series",
     "rating": "E",
     "isBookmarked": true,
     "isTrending": false
@@ -129,7 +129,7 @@
     "title": "Relentless",
     "image": "/images/relentless/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "PG",
     "isBookmarked": true,
     "isTrending": false
@@ -138,7 +138,7 @@
     "title": "Community of Ours",
     "image": "/images/community-of-ours/regular/large.jpg",
     "year": 2018,
-    "category": "TV Series",
+    "category": "series",
     "rating": "18+",
     "isBookmarked": false,
     "isTrending": false
@@ -147,7 +147,7 @@
     "title": "Van Life",
     "image": "/images/van-life/regular/large.jpg",
     "year": 2015,
-    "category": "Movie",
+    "category": "movie",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -156,7 +156,7 @@
     "title": "The Heiress",
     "image": "/images/the-heiress/regular/large.jpg",
     "year": 2021,
-    "category": "Movie",
+    "category": "movie",
     "rating": "PG",
     "isBookmarked": true,
     "isTrending": false
@@ -165,7 +165,7 @@
     "title": "Off the Track",
     "image": "/images/off-the-track/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "18+",
     "isBookmarked": true,
     "isTrending": false
@@ -174,7 +174,7 @@
     "title": "Whispering Hill",
     "image": "/images/whispering-hill/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "E",
     "isBookmarked": false,
     "isTrending": false
@@ -183,7 +183,7 @@
     "title": "112",
     "image": "/images/112/regular/large.jpg",
     "year": 2013,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -192,7 +192,7 @@
     "title": "Lone Heart",
     "image": "/images/lone-heart/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "E",
     "isBookmarked": true,
     "isTrending": false
@@ -201,7 +201,7 @@
     "title": "Production Line",
     "image": "/images/production-line/regular/large.jpg",
     "year": 2018,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -210,7 +210,7 @@
     "title": "Dogs",
     "image": "/images/dogs/regular/large.jpg",
     "year": 2016,
-    "category": "TV Series",
+    "category": "series",
     "rating": "E",
     "isBookmarked": true,
     "isTrending": false
@@ -219,7 +219,7 @@
     "title": "Asia in 24 Days",
     "image": "/images/asia-in-24-days/regular/large.jpg",
     "year": 2020,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -228,7 +228,7 @@
     "title": "The Tasty Tour",
     "image": "/images/the-tasty-tour/regular/large.jpg",
     "year": 2016,
-    "category": "TV Series",
+    "category": "series",
     "rating": "PG",
     "isBookmarked": false,
     "isTrending": false
@@ -237,7 +237,7 @@
     "title": "Darker",
     "image": "/images/darker/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "18+",
     "isBookmarked": true,
     "isTrending": false
@@ -246,16 +246,16 @@
     "title": "Unresolved Cases",
     "image": "/images/unresolved-cases/regular/large.jpg",
     "year": 2018,
-    "category": "TV Series",
+    "category": "series",
     "rating": "18+",
     "isBookmarked": false,
     "isTrending": false
   },
   {
     "title": "Mission: Saturn",
-    "image": "/images/mission-saturn/regular/large.",
+    "image": "/images/mission-saturn/regular/large.jpg",
     "year": 2017,
-    "category": "Movie",
+    "category": "movie",
     "rating": "PG",
     "isBookmarked": true,
     "isTrending": false

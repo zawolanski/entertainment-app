@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-import { Movie } from '../../data/types';
+import { Video } from '../../data/types';
 import Bookmark from '../Bookmark/Bookmark';
 import CardInformations from '../CardInformations/CardInformations';
 import Play from '../Play/Play';
 import styles from './card.module.scss';
 
-type Props = Movie;
+type Props = Video;
 
 const Card = ({ image, isBookmarked, ...rest }: Props) => {
   return (

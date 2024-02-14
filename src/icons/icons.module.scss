@@ -1,0 +1,27 @@
+.circle {
+  animation: spinnerAnimation 1.05s infinite;
+  fill: var(--light);
+}
+
+.circle2 {
+  animation-delay: 0.1s;
+}
+
+.circle3 {
+  animation-delay: 0.2s;
+}
+
+@keyframes spinnerAnimation {
+  0%,
+  57.14% {
+    animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);
+    transform: translate(0);
+  }
+  28.57% {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 0.33);
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

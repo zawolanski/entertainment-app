@@ -1,7 +1,21 @@
-const Series = () => {
+import Card from '@/components/Card/Card';
+import Heading from '@/components/Heading/Heading';
+
+import { fetchData } from '../../helpers/fetchData';
+import homeStyles from '../page.module.scss';
+import styles from './series.module.scss';
+
+const Series = async () => {
+  const series = await fetchData('series');
+
   return (
-    <div>
-      <h2>Series</h2>
+    <div className={styles.container}>
+      <Heading>TV Series</Heading>
+      <div className={homeStyles.videosGrid}>
+        {series.map((movie) => (
+          <Card key={movie.title} {...movie} />
+        ))}
+      </div>
     </div>
   );
 };

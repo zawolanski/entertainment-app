@@ -4,11 +4,11 @@ import SearchWrapper from '@/components/SearchWrapper/SearchWrapper';
 import TrendingCard from '@/components/TrendingCard/Trending';
 
 import data from '../data/data.json';
-import { Movie } from '../data/types';
+import { Video } from '../data/types';
 import styles from './page.module.scss';
 
 const Home = () => {
-  const parsedData = data as Movie[];
+  const parsedData = data as Video[];
 
   return (
     <div className={styles.wrapper}>
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <div className={styles.recommended}>
         <Heading>Recommended for you</Heading>
-        <div className={styles.recommendedElements}>
+        <div className={styles.videosGrid}>
           <Card {...parsedData[5]} />
           <Card {...parsedData[6]} />
           <Card {...parsedData[7]} />

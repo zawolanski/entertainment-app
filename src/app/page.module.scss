@@ -20,6 +20,7 @@
 .wrapper {
   overflow: hidden;
   padding: 2rem 1rem;
+  width: 100%;
   max-width: 125rem;
   flex-grow: 1;
   display: flex;
@@ -56,7 +57,7 @@
   }
 }
 
-.recommendedElements {
+.videosGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: 9.625rem;
