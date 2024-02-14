@@ -6,13 +6,13 @@ import CardInformations from '../CardInformations/CardInformations';
 import Play from '../Play/Play';
 import styles from './trending.module.scss';
 
-type Props = Omit<Movie, 'thumbnail'> & { img: string };
+type Props = Movie;
 
-const TrendingCard = ({ img, isBookmarked, ...rest }: Props) => {
+const TrendingCard = ({ image, isBookmarked, ...rest }: Props) => {
   return (
     <div className={styles.trendingContainer}>
       <div className={styles.container}>
-        <Image src={img} alt="" className={styles.image} fill />
+        <Image src={image} alt="" className={styles.image} fill />
         <CardInformations isAbsolute {...rest} />
         <Play className={styles.playContainer} />
       </div>

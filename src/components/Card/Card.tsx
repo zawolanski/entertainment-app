@@ -6,13 +6,13 @@ import CardInformations from '../CardInformations/CardInformations';
 import Play from '../Play/Play';
 import styles from './card.module.scss';
 
-type Props = Omit<Movie, 'thumbnail'> & { img: string };
+type Props = Movie;
 
-const Card = ({ img, isBookmarked, ...rest }: Props) => {
+const Card = ({ image, isBookmarked, ...rest }: Props) => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageContainer}>
-        <Image src={img} alt="" className={styles.image} fill />
+        <Image src={image} alt="" className={styles.image} fill />
         <Play className={styles.playContainer} />
       </div>
       <Bookmark isBookmarked={isBookmarked} />

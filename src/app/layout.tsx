@@ -24,7 +24,7 @@ const RootLayout = ({ children }: Props) => {
       <body>
         <div className={styles.mainContainer}>
           <Header />
-          {children}
+          <main className={styles.main}>{children}</main>
         </div>
       </body>
     </html>
