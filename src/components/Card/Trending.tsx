@@ -28,10 +28,11 @@ const TrendingCard = ({
             <Oval className={styles.informationOval} />
             <Movies className={styles.informationIcon} />
             <span>{category}</span>
+            <Oval className={styles.informationOval} />
+            <span>{rating}</span>
           </div>
-          <h3>{title}</h3>
+          <h3 className={styles.informationHeading}>{title}</h3>
         </div>
-        <div className={styles.rating}>{rating}</div>
         <div className={styles.playContainer}>
           <Play className={styles.playIcon} />
           <span className={styles.playText}>Play</span>

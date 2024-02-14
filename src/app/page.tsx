@@ -13,30 +13,32 @@ const Home = () => {
 
   return (
     <main className={styles.main}>
-      <SearchWrapper />
-      <div className={styles.trending}>
-        <Heading>Trending</Heading>
-        <div className={styles.trendingElements}>
-          <TrendingCard
-            {...parsedData[0]}
-            img={parsedData[0].thumbnail.regular.large}
-          />
-          <TrendingCard
-            {...parsedData[1]}
-            img={parsedData[1].thumbnail.regular.large}
-          />
-          <TrendingCard
-            {...parsedData[2]}
-            img={parsedData[2].thumbnail.regular.large}
-          />
-          <TrendingCard
-            {...parsedData[3]}
-            img={parsedData[3].thumbnail.regular.large}
-          />
+      <div className={styles.wrapper}>
+        <SearchWrapper />
+        <div className={styles.trending}>
+          <Heading>Trending</Heading>
+          <div className={styles.trendingElements}>
+            <TrendingCard
+              {...parsedData[0]}
+              img={parsedData[0].thumbnail.regular.large}
+            />
+            <TrendingCard
+              {...parsedData[1]}
+              img={parsedData[1].thumbnail.regular.large}
+            />
+            <TrendingCard
+              {...parsedData[2]}
+              img={parsedData[2].thumbnail.regular.large}
+            />
+            <TrendingCard
+              {...parsedData[3]}
+              img={parsedData[3].thumbnail.regular.large}
+            />
+          </div>
         </div>
-      </div>
-      <div className={styles.recommended}>
-        <Heading>Recommended for you</Heading>
+        <div className={styles.recommended}>
+          <Heading>Recommended for you</Heading>
+        </div>
       </div>
     </main>
   );

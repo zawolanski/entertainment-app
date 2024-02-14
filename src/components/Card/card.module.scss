@@ -4,11 +4,16 @@
   position: relative;
   width: 15rem;
   height: 8.75rem;
+
+  @include media(tablet) {
+    width: 25rem;
+    height: 14.375rem;
+  }
 }
 
 .container {
   width: 15rem;
-  height: 8.75rem;
+  height: 100%;
   position: relative;
   border-radius: var(--radius-sm);
   cursor: pointer;
@@ -23,6 +28,10 @@
     background: var(--black);
     transition: opacity var(--default-transition-time);
   }
+
+  @include media(tablet) {
+    width: 25rem;
+  }
 }
 
 .image {
@@ -36,6 +45,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+
+  @include media(tablet) {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
 }
 
 .informationGeneral {
@@ -44,6 +58,10 @@
   align-items: center;
   font-size: var(--text-xs);
   color: rgba($light, 0.75);
+
+  @include media(tablet) {
+    font-size: var(--text-sm);
+  }
 }
 
 .informationOval {
@@ -62,6 +80,10 @@
 .informationHeading {
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
+
+  @include media(tablet) {
+    font-size: var(--text-xl);
+  }
 }
 
 .rating {
@@ -86,17 +108,32 @@
   align-items: center;
   opacity: 0;
   transition: opacity var(--default-transition-time);
+
+  @include media(tablet) {
+    padding: 0.5rem;
+    border-radius: var(--radius-xl);
+  }
 }
 
 .playIcon {
   width: 1rem;
   height: 1rem;
+
+  @include media(tablet) {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
 }
 
 .playText {
   font-size: var(--text-xs);
   font-weight: var(--font-medium);
   padding: 0 0.25rem;
+
+  @include media(tablet) {
+    padding: 0 0.75rem;
+    font-size: var(--text-md);
+  }
 }
 
 .container:hover {
