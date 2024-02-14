@@ -3,6 +3,7 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
+  min-height: 100svh;
 
   @include media(desktop) {
     flex-direction: row;
