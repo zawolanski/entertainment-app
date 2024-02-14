@@ -1,0 +1,41 @@
+@import '../../app/styles/mixins';
+
+.playContainer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.25rem;
+  border-radius: var(--radius-lg);
+  background-color: rgba($light, 0.15);
+  align-items: center;
+  opacity: 0;
+  transition: opacity var(--default-transition-time);
+
+  @include media(tablet) {
+    padding: 0.5rem;
+    border-radius: var(--radius-xl);
+  }
+}
+
+.playIcon {
+  width: 1rem;
+  height: 1rem;
+
+  @include media(tablet) {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+
+.playText {
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  padding: 0 0.25rem;
+
+  @include media(tablet) {
+    padding: 0 0.75rem;
+    font-size: var(--text-md);
+  }
+}

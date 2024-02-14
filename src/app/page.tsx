@@ -1,6 +1,7 @@
-import TrendingCard from '@/components/Card/Trending';
+import Card from '@/components/Card/Card';
 import Heading from '@/components/Heading/Heading';
 import SearchWrapper from '@/components/SearchWrapper/SearchWrapper';
+import TrendingCard from '@/components/TrendingCard/Trending';
 
 import data from '../data/data.json';
 import { Movie } from '../data/types';
@@ -38,6 +39,96 @@ const Home = () => {
         </div>
         <div className={styles.recommended}>
           <Heading>Recommended for you</Heading>
+          <div className={styles.recommendedElements}>
+            <Card
+              {...parsedData[5]}
+              img={parsedData[5].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[6]}
+              img={parsedData[6].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[7]}
+              img={parsedData[7].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[8]}
+              img={parsedData[8].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[9]}
+              img={parsedData[9].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[10]}
+              img={parsedData[10].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+            <Card
+              {...parsedData[11]}
+              img={parsedData[11].thumbnail.regular.large}
+            />
+          </div>
         </div>
       </div>
     </main>

@@ -1,0 +1,55 @@
+@import '../../app/styles/mixins';
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.absolute {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+
+  @include media(tablet) {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+.informationGeneral {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: var(--text-xs);
+  color: rgba($light, 0.75);
+
+  @include media(tablet) {
+    font-size: var(--text-sm);
+  }
+}
+
+.informationOval {
+  fill: var(--light);
+  opacity: 0.5;
+}
+
+.informationIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  path {
+    fill: rgba($light, 0.75);
+  }
+}
+
+.informationHeading {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include media(tablet) {
+    font-size: var(--text-xl);
+  }
+}
