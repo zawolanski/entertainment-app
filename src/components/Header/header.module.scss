@@ -6,16 +6,26 @@
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
   @include media(tablet) {
     padding: 1.125rem;
     border-radius: var(--radius-md);
+    margin: 1.5rem;
+    top: 1.5rem;
   }
 
   @include media(desktop) {
     padding: 2rem 1.75rem;
     border-radius: var(--radius-lg);
     flex-direction: column;
+    margin: 2rem;
+    top: 2rem;
+    left: 2rem;
+    max-height: calc(100vh - 4rem);
   }
 }
 

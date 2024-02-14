@@ -10,8 +10,6 @@ import styles from './page.module.scss';
 const Home = () => {
   const parsedData = data as Movie[];
 
-  console.log(parsedData[0].title);
-
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>
