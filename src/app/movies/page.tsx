@@ -8,8 +8,6 @@ import styles from './movies.module.scss';
 const Movies = async () => {
   const movies = await fetchData('movies');
 
-  console.log('movies', movies);
-
   return (
     <div className={styles.container}>
       <Heading>Movies</Heading>

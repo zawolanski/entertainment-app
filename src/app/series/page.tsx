@@ -12,8 +12,8 @@ const Series = async () => {
     <div className={styles.container}>
       <Heading>TV Series</Heading>
       <div className={homeStyles.videosGrid}>
-        {series.map((movie) => (
-          <Card key={movie.title} {...movie} />
+        {series.map((serial) => (
+          <Card key={serial.title} {...serial} />
         ))}
       </div>
     </div>
