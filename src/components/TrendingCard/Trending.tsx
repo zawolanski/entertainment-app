@@ -12,7 +12,13 @@ const TrendingCard = ({ image, isBookmarked, ...rest }: Props) => {
   return (
     <div className={styles.trendingContainer}>
       <div className={styles.container}>
-        <Image src={image} alt="" className={styles.image} fill />
+        <Image
+          src={image}
+          alt=""
+          className={styles.image}
+          fill
+          loading="eager"
+        />
         <CardInformations isAbsolute {...rest} />
         <Play className={styles.playContainer} />
       </div>
