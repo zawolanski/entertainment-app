@@ -7,7 +7,7 @@ import SearchResults from '@/components/SearchResults/SearchResults';
 import Spinner from '@/components/Spinner/Spinner';
 
 import { fetchData } from '../../helpers/fetchData';
-import homeStyles from '../page.module.scss';
+import commonStyles from '../styles/common.module.scss';
 import styles from './series.module.scss';
 
 type Props = {
@@ -38,7 +38,7 @@ const Content = async () => {
   return (
     <>
       <Heading>TV Series</Heading>
-      <div className={homeStyles.videosGrid}>
+      <div className={commonStyles.videosGrid}>
         {series.map((serial) => (
           <Card key={serial.title} {...serial} />
         ))}

@@ -44,7 +44,8 @@
   display: flex;
   gap: 16px;
   overflow-x: auto;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  scrollbar-color: var(--greyish-blue) transparent;
 }
 
 .recommended {
@@ -54,32 +55,5 @@
 
   @include media(tablet) {
     gap: 1.5rem;
-  }
-}
-
-.videosGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: 9.625rem;
-  gap: 1rem;
-
-  @include media(tablet) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-auto-rows: 12.75rem;
-    gap: 2rem;
-  }
-
-  @include media(desktop) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-auto-rows: 15rem;
-    gap: 2.5rem;
-  }
-
-  @include media(monitor) {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  @include media(largeMonitor) {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
