@@ -16,21 +16,21 @@ export const links = [
   {
     href: route.home,
     icon: <Home className={styles.navListIcon} />,
-    label: 'Home',
+    label: 'Go to main page',
   },
   {
     href: route.movies,
     icon: <Movies className={styles.navListIcon} />,
-    label: 'Movies',
+    label: 'Go to movies page',
   },
   {
     href: route.series,
     icon: <Series className={styles.navListIcon} />,
-    label: 'TV Series',
+    label: 'Go to TV Series page',
   },
   {
     href: route.saved,
     icon: <Saved className={styles.navListIcon} />,
-    label: 'Bookmarked',
+    label: 'Go to bookmarked page',
   },
 ];

@@ -15,7 +15,7 @@ const Card = ({ image, isBookmarked, ...rest }: Props) => {
         <Image src={image} alt="" className={styles.image} fill />
         <Play className={styles.playContainer} />
       </div>
-      <Bookmark isBookmarked={isBookmarked} />
+      <Bookmark isBookmarked={isBookmarked} videoName={rest.title} />
       <CardInformations {...rest} />
     </div>
   );

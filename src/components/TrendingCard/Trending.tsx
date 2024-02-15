@@ -16,7 +16,7 @@ const TrendingCard = ({ image, isBookmarked, ...rest }: Props) => {
         <CardInformations isAbsolute {...rest} />
         <Play className={styles.playContainer} />
       </div>
-      <Bookmark isBookmarked={isBookmarked} />
+      <Bookmark isBookmarked={isBookmarked} videoName={rest.title} />
     </div>
   );
 };

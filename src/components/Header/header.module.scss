@@ -59,11 +59,11 @@
 }
 
 .navListLink {
-  &.active > li > svg path {
+  &.active svg path {
     fill: var(--light);
   }
 
-  &:hover > li > svg path {
+  &:hover svg path {
     transition: fill var(--default-transition-time);
     fill: var(--danger);
   }

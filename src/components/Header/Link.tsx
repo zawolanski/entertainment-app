@@ -13,12 +13,15 @@ const Link = ({ href, icon, label }: Props) => {
   const pathhame = usePathname();
 
   return (
-    <NextLink
-      href={href}
-      className={clsx(styles.navListLink, pathhame === href && styles.active)}
-    >
-      <li aria-label={label}>{icon}</li>
-    </NextLink>
+    <li>
+      <NextLink
+        href={href}
+        aria-label={label}
+        className={clsx(styles.navListLink, pathhame === href && styles.active)}
+      >
+        {icon}
+      </NextLink>
+    </li>
   );
 };
 
