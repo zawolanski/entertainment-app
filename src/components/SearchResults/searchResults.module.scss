@@ -1,0 +1,11 @@
+@import '../../app/styles/mixins';
+
+.recommended {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include media(tablet) {
+    gap: 1.5rem;
+  }
+}

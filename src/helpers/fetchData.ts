@@ -1,7 +1,7 @@
 import data from '../data/data.json';
 import { Video } from '../data/types';
 
-type FilterKey = 'movies' | 'series' | 'bookmarked' | 'trending' | 'all';
+export type FilterKey = 'movies' | 'series' | 'bookmarked' | 'trending' | 'all';
 
 const isValidCategory = (data: unknown): data is Video =>
   data !== null &&
@@ -15,27 +15,44 @@ const getData = (): Video[] => {
     .filter((d) => d !== null) as Video[];
 };
 
-const getFilteredData = (key: FilterKey) => {
+const getFilteredData = (key: FilterKey, search?: string) => {
+  let data: Video[] = [];
+
   switch (key) {
     case 'movies':
-      return getData().filter((item) => item.category === 'movie');
+      data = getData().filter((item) => item.category === 'movie');
+      break;
     case 'series':
-      return getData().filter((item) => item.category === 'series');
+      data = getData().filter((item) => item.category === 'series');
+      break;
     case 'bookmarked':
-      return getData().filter((item) => item.isBookmarked);
+      data = getData().filter((item) => item.isBookmarked);
+      break;
     case 'trending':
-      return getData().filter((item) => item.isTrending);
+      data = getData().filter((item) => item.isTrending);
+      break;
     case 'all':
-      return getData();
+      data = getData();
+      break;
     default:
-      return getData();
+      data = getData();
   }
+
+  if (search)
+    return data.filter((item) =>
+      item.title.toLowerCase().startsWith(search.toLowerCase()),
+    );
+
+  return data;
 };
 
-export const fetchData = (key: FilterKey): Promise<Video[]> => {
+export const fetchData = (
+  key: FilterKey,
+  search?: string,
+): Promise<Video[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(getFilteredData(key));
-    }, 1500);
+      resolve(getFilteredData(key, search));
+    }, 1000);
   });
 };

@@ -1,6 +1,8 @@
 'use client';
 
-import { ChangeEvent, ElementRef, useCallback } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { ChangeEvent } from 'react';
+import { useDebouncedCallback } from 'use-debounce';
 
 import Search from '@/icons/Search';
 
@@ -8,17 +10,28 @@ import styles from './searchInput.module.scss';
 
 type Props = {
   label: string;
-  value: string;
-  onChange: (value: string) => void;
   placeholder: string;
 };
 
-const SearchInput = ({ label, onChange, value, placeholder }: Props) => {
-  const handleChange = useCallback(
-    (e: ChangeEvent<ElementRef<'input'>>) => {
-      onChange(e.target.value);
+const SearchWrapper = ({ label, placeholder }: Props) => {
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+
+  const handleSearch = useDebouncedCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      const term = e.target.value;
+      const params = new URLSearchParams(searchParams);
+
+      if (term) {
+        params.set('s', term);
+      } else {
+        params.delete('s');
+      }
+
+      replace(`${pathname}?${params.toString()}`);
     },
-    [onChange],
+    250,
   );
 
   return (
@@ -26,13 +39,13 @@ const SearchInput = ({ label, onChange, value, placeholder }: Props) => {
       <Search className={styles.searchIcon} />
       <input
         aria-label={label}
-        value={value}
-        onChange={handleChange}
+        onChange={handleSearch}
         placeholder={placeholder}
         className={styles.input}
+        defaultValue={searchParams.get('s')?.toString()}
       />
     </div>
   );
 };
 
-export default SearchInput;
+export default SearchWrapper;
